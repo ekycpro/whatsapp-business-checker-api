@@ -1,0 +1,48 @@
+{
+  "name": "WhatsApp Business Checker API",
+  "brand": "eKYC Pro",
+  "repository": "ekycpro/whatsapp-business-checker-api",
+  "description": "Synchronous whatsapp-business checks using one E.164 phone number.",
+  "official_site": "https://ekycpro.com",
+  "landing_page": "https://ekycpro.com/tools/whatsapp-business",
+  "canonical_docs": "https://docs.ekycpro.com/whatsapp-business-checker",
+  "base_url": "https://api.ekycpro.com",
+  "auth": {
+    "type": "api_key",
+    "header": "X-API-Key"
+  },
+  "mode": "sync",
+  "endpoints": {
+    "check": {
+      "method": "POST",
+      "path": "/v1/check"
+    },
+    "balance": {
+      "method": "GET",
+      "path": "/v1/balance"
+    }
+  },
+  "products": [
+    {
+      "type": "ws_business",
+      "name": "WhatsApp Business Checker",
+      "inputKind": "phone",
+      "min_inputs": 1,
+      "max_inputs": 1,
+      "docs_url": "https://docs.ekycpro.com/whatsapp-business-checker",
+      "fields": [
+        "id",
+        "identifier",
+        "registered",
+        "billed",
+        "cost",
+        "cost_usd",
+        "business"
+      ]
+    }
+  ],
+  "pricing_url": "https://ekycpro.com/pricing",
+  "maintainer": "eKYC Pro",
+  "license": "MIT",
+  "last_reviewed": "2026-08-18"
+}
